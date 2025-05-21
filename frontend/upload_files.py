@@ -1,6 +1,8 @@
 import streamlit as st
 import os, requests
 
+from backend.app.services.new_upload import upload_docs_from_files
+
 
 def uploading_files(BASE_URL:str):
 
@@ -23,7 +25,8 @@ def uploading_files(BASE_URL:str):
                 # Prepare multipart form-data
                 files = [('files', (os.path.basename(path), open(path, 'rb'))) for path in file_paths]
 
-                resp = requests.post(f"{BASE_URL}/upload", files=files)
+                #resp = requests.post(f"{BASE_URL}/upload", files=files)
+                resp = uploaded_files(file_paths=files)
                 if resp.status_code == 200:
                         st.success(f"{resp.json().get('message', '')}")
                 else:
