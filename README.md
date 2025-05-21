@@ -31,3 +31,17 @@ Through `llm` Analyze responses from all documents collectively and `identify th
 Output is `structured` like `document_id`, `Extracted answer`, `Citation` and `Final synthesized response`.
 
 Update the existing collection of each pdf containing meta data with summary and keywords. use the existing pickle objects that we generate from summarization.py and keyword.py .
+
+## 🧰 Technologies Used:
+
+| Category             | Technology                     |
+| -------------------- | ------------------------------ |
+| Programming Language | Python                         |
+| Frontend             | Streamlit                      |
+| Backend              | FastAPI                        |
+| OCR                  | EasyOCR                        |
+| LLM API              | LLaMA 3.3 70B via Groq         |
+| Vector DB            | ChromaDB                       |
+| Text Embedding       | SentenceTransformers (assumed) |
+| Database             | MongoDB                        |
+| Parallelism          | ThreadPoolExecutor             |
