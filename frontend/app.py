@@ -30,7 +30,7 @@ def main():
 
     # Step 1: Upload files
     st.header("Upload Documents")
-    uploading_files(BASE_URL=BASE_URL)
+    uploading_files(BASE_URL:str)
 
 
     # Step 2: Trigger processing

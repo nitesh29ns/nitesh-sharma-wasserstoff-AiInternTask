@@ -1,9 +1,3 @@
 streamlit
 streamlit-pdf-reader
 pandas
-langchain_community
-langchain
-langchain-groq
-chromadb
-pymongo[srv]
-sentence-transformers
