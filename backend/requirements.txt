@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+langchain
+langchain-groq
+streamlit
+streamlit-pdf-reader
+pandas
+chromadb
+pymongo[srv]
+sentence-transformers
