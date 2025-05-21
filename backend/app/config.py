@@ -1,4 +1,4 @@
-BASE_URL = "http://0.0.0.0:8000"
+BASE_URL = "http://localhost:8000"
 
 OCR_LANGUAGE = "en"
 
