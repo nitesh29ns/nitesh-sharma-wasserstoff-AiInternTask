@@ -2,14 +2,14 @@ import streamlit as st
 import requests
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from backend.app import config
+#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+#from backend.app import config
 from documents_processing import process
 from document_selector import show_document_selector
 from upload_files import uploading_files
 from llm_query import llm_response
 
-BASE_URL = config.BASE_URL  # change if your FastAPI is hosted elsewhere
+BASE_URL = "https://themebackend-production.up.railway.app"
 def main():
     
     st.set_page_config(layout="wide")
